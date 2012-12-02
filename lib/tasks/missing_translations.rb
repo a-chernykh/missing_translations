@@ -1,6 +1,6 @@
 require 'hash_keys_dumper'
 
-namespace :'missing-translations' do
+namespace :missing_translations do
   desc 'Shows I18n translation keys which are missing (according to view parsing)'
   task :show => :environment do
     keys = Dir.glob('app/**/*.haml').map do |view|
