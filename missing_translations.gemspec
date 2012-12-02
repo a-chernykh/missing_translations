@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
   s.email = "andrey.chernih@gmail.com"
   s.extra_rdoc_files = [
     "LICENSE.txt",
-    "README.rdoc"
+    "README.md"
   ]
   s.files = [
     ".document",
@@ -21,12 +21,14 @@ Gem::Specification.new do |s|
     "Gemfile",
     "Gemfile.lock",
     "LICENSE.txt",
-    "README.rdoc",
+    "README.md",
     "Rakefile",
     "VERSION",
     "lib/hash_keys_dumper.rb",
     "lib/missing_translations.rb",
-    "lib/tasks/missing_translations.rake",
+    "lib/railtie.rb",
+    "lib/tasks/missing_translations.rb",
+    "missing_translations.gemspec",
     "spec/lib/hash_keys_dumper_spec.rb",
     "spec/spec_helper.rb"
   ]
