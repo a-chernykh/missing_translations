@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "missing_translations"
   gem.homepage = "http://github.com/AndreyChernyh/missing_translations"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Show missing I18n keys in Rails applications}
+  # gem.description = %Q{TODO: longer description of your gem}
   gem.email = "andrey.chernih@gmail.com"
   gem.authors = ["Andrey Chernih"]
   # dependencies defined in Gemfile
