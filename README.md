@@ -8,6 +8,10 @@ Shows missing I18n keys for Rails 3 application. It parses all view files search
 bundle exec rake missing_translations:show
 ```
 
+## TODO
+
+* Add ERB templates support
+
 ## Contributing to missing_translations
  
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet.
