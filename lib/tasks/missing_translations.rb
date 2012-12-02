@@ -9,13 +9,17 @@ namespace :missing_translations do
       context = "#{dir}.#{file}"
 
       File.readlines(view).map do |line|
-        line.match(/\s+t\s*\(?['"]([^#]+?)['"]/i) do |m|
-          arg = m[1]
-          arg[0] == '.' ? "en.#{context}#{arg}" : "en.#{arg}"
+        line.scan(/\s+t\s*\(?['"]([^#+]+?)['"]/i).map do |m|
+          arg = m[0]
+          if arg != '.'
+            arg[0] == '.' ? "en.#{context}#{arg}" : "en.#{arg}"
+          end
         end
       end
     end
     used_keys = keys.compact.flatten.compact.uniq
+
+    # puts used_keys
 
     keys = Dir.glob('config/locales/*.yml').map { |locale| HashKeysDumper.dump YAML.load(File.read(locale)) }
     available_keys = keys.flatten
