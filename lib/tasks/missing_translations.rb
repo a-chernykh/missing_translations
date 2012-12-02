@@ -23,8 +23,14 @@ namespace :missing_translations do
 
     keys = Dir.glob('config/locales/*.yml').map { |locale| HashKeysDumper.dump YAML.load(File.read(locale)) }
     available_keys = keys.flatten
-    
-    puts 'Missing translations'
-    puts (used_keys - available_keys)
+
+    missing_keys = (used_keys - available_keys)
+
+    if missing_keys.any?
+      puts 'Missing translations'
+      puts missing_keys
+    else
+      puts 'You have no missing translations'
+    end
   end
 end
