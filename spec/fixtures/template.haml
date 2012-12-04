@@ -1,0 +1,13 @@
+%h1 Testing
+
+= t('.testing')
+#whatever = t('.whatever')
+
+= t("with #{another} interpolation")
+
+= t(".with_double_quotes")
+= t('global_scoped')
+
+= translate('long_helper_name')
+
+= #{t('multiple_occurences')} #{t('on_the_same_string')}

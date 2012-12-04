@@ -1,16 +1,20 @@
 # missing_translations
 
-Shows missing I18n keys for Rails 3 application. It parses all view files searchign for ```t``` helper invocation. Currently only haml views suported.
+Shows missing I18n keys for Rails 3 application. It parses all view files searching for ```t``` helper invocation. ```HAML``` and ```ERB``` views are supported.
+
+## Installation
+
+Add the following line to your ```Gemfile```:
+
+```ruby
+gem 'missing_translations'
+```
 
 ## How to run
 
 ```
 bundle exec rake missing_translations:show
 ```
-
-## TODO
-
-* Add ERB templates support
 
 ## Contributing to missing_translations
  
