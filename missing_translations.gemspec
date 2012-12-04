@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "missing_translations"
-  s.version = "0.2.0"
+  s.version = "1.0.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Andrey Chernih"]
-  s.date = "2012-12-02"
+  s.date = "2012-12-04"
   s.email = "andrey.chernih@gmail.com"
   s.extra_rdoc_files = [
     "LICENSE.txt",
@@ -28,9 +28,13 @@ Gem::Specification.new do |s|
     "lib/missing_translations.rb",
     "lib/railtie.rb",
     "lib/tasks/missing_translations.rb",
+    "lib/templates_parser.rb",
     "missing_translations.gemspec",
+    "spec/fixtures/template.erb",
+    "spec/fixtures/template.haml",
     "spec/lib/hash_keys_dumper_spec.rb",
-    "spec/spec_helper.rb"
+    "spec/spec_helper.rb",
+    "spec/templates_parser_spec.rb"
   ]
   s.homepage = "http://github.com/AndreyChernyh/missing_translations"
   s.licenses = ["MIT"]
