@@ -17,6 +17,19 @@ gem 'missing_translations'
 bundle exec rake missing_translations
 ```
 
+Example output in one project of mine:
+
+```
+% rake missing_translations
+Searching in app/views/admin/app_versions/nodes.html.erb
+...
+Searching in app/views/layouts/application.html.slim
+
+Missing translations
+en.logo.alt
+en.layouts.application.welcome.message
+```
+
 [haml]: http://haml.info/
 [erb]: http://ruby-doc.org/stdlib-2.1.2/libdoc/erb/rdoc/ERB.html
 [slim]: http://slim-lang.com/
