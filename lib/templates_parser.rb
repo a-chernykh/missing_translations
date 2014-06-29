@@ -5,12 +5,16 @@ class TemplatesParser
 
   def keys
     keys = @files.map do |template|
+      puts "Searching in #{template}"
+
       file    = File.basename(template).gsub /^_?(.+?)\..+$/, '\1'
       dir     = template.split('/')[-2]
       context = "#{dir}.#{file}"
 
       File.readlines(template).map { |line| line_keys(line, context) }
     end
+
+    puts
 
     keys.compact.flatten.compact.uniq
   end

@@ -4,7 +4,7 @@ require 'templates_parser'
 namespace :missing_translations do
   desc 'Shows I18n translation keys which are missing (according to view parsing)'
   task :show => :environment do
-    parser = TemplatesParser.new Dir.glob('app/**/*.haml') + Dir.glob('app/**/*.erb')
+    parser = TemplatesParser.new Dir.glob('app/**/*.haml') + Dir.glob('app/**/*.erb') + Dir.glob('app/**/*.slim')
     used_keys = parser.keys
 
     keys = Dir.glob('config/locales/*.yml').map { |locale| HashKeysDumper.dump YAML.load(File.read(locale)) }
