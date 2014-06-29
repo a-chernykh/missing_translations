@@ -14,7 +14,7 @@ gem 'missing_translations'
 ## How to run
 
 ```
-bundle exec rake missing_translations:show
+bundle exec rake missing_translations
 ```
 
 [haml]: http://haml.info/
