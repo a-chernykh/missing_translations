@@ -16,6 +16,6 @@ describe TemplatesParser do
   its(:keys) { should include 'en.on_the_same_string' }
 
   it 'does not includes keys with string interpolation' do
-    subject.keys.each { |key| key.should_not include 'interpolation' }
+    subject.keys.each { |key| expect(key).not_to include 'interpolation' }
   end
 end
