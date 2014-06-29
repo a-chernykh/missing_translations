@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/AndreyChernyh/missing_translations.png?branch=master)](https://travis-ci.org/AndreyChernyh/missing_translations)
+[![Build Status](https://travis-ci.org/andreychernih/missing_translations.png?branch=master)](https://travis-ci.org/andreychernih/missing_translations)
 # missing_translations
 
 Shows missing I18n keys for Rails 3 application. It parses all view files searching for ```t``` helper invocation. ```HAML``` and ```ERB``` views are supported.
